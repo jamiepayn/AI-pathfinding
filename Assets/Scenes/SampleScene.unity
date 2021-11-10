@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -590,12 +590,14 @@ GameObject:
   - component: {fileID: 474688328}
   - component: {fileID: 474688327}
   - component: {fileID: 474688326}
+  - component: {fileID: 474688330}
+  - component: {fileID: 474688329}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &474688325
 Transform:
@@ -604,13 +606,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474688324}
-  m_LocalRotation: {x: -0, y: 0.9240131, z: -0, w: 0.3823609}
-  m_LocalPosition: {x: 0.3675966, y: 0.585032, z: -0.11249305}
-  m_LocalScale: {x: 0.36499998, y: 1, z: 0.0305}
+  m_LocalRotation: {x: -0.000014833968, y: 0.9999824, z: -0.0028471472, w: -0.005210027}
+  m_LocalPosition: {x: 0.47400004, y: 0.59, z: -0.048000004}
+  m_LocalScale: {x: 0.050000004, y: 1, z: 0.03050001}
   m_Children: []
   m_Father: {fileID: 1000325435}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 135.04, z: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0.326, y: 180.597, z: 0}
 --- !u!65 &474688326
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -674,6 +676,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474688324}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!208 &474688329
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474688324}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!95 &474688330
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474688324}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b22a99b065c7d2840a0c5ab1290fabb1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &561859182
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,7 +1030,7 @@ Transform:
   m_LocalScale: {x: 0.25, y: 1, z: 0.0305}
   m_Children: []
   m_Father: {fileID: 1000325435}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &602757482
 BoxCollider:
@@ -1278,7 +1315,7 @@ Transform:
   m_LocalScale: {x: 0.27149996, y: 1, z: 0.0305}
   m_Children: []
   m_Father: {fileID: 1000325435}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &826300421
 BoxCollider:
@@ -1420,7 +1457,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 10.5, z: 0}
+  m_LocalPosition: {x: 0.72, y: 11.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1530,10 +1567,10 @@ Transform:
   - {fileID: 1155198405}
   - {fileID: 30638817}
   - {fileID: 752887030}
-  - {fileID: 474688325}
   - {fileID: 1179445808}
   - {fileID: 826300420}
   - {fileID: 602757481}
+  - {fileID: 474688325}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1856,7 +1893,7 @@ Transform:
   m_LocalScale: {x: 0.32764766, y: 1, z: 0.030500006}
   m_Children: []
   m_Father: {fileID: 1000325435}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 133.02, z: 0}
 --- !u!65 &1179445809
 BoxCollider:
