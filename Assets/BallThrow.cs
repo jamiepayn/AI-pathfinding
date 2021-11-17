@@ -8,11 +8,14 @@ public class BallThrow: MonoBehaviour
     public float moveSpeedX;
     public float moveSpeedZ;
     public float moveSpeedY;
+    public Vector3 offset;
     
-    
+    public GameObject ball;
     public GameObject ballHand;
     public GameObject ballMouth;
     public GameObject huckball;
+    public Transform ballInitialPosition;
+
     Rigidbody rb;
     BoxCollider bc;
     Animator anim;
@@ -80,7 +83,14 @@ public class BallThrow: MonoBehaviour
     public void Huck()
     {
      ballMouth.SetActive(false);
-     Instantiate(huckball, new Vector3(-5.89499998f,2.58699989f,-5.30200005f), Quaternion.identity);
+     GameObject ball = Instantiate(huckball, ballInitialPosition.position,transform.rotation);
+
+
+
+     Rigidbody rb = ball.GetComponent<Rigidbody>();
+     rb.AddForce(transform.forward*1, ForceMode.Impulse);
+     rb.AddForce(transform.up*2, ForceMode.Impulse);
+
     }
 
 
